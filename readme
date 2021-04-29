@@ -1,0 +1,6 @@
+commande sass (à faire à la racine du projet):
+sass --watch ./assets/index.sass:./assets/css/style.css
+
+https://blog.smarchal.com/sass-et-media-queries
+
+

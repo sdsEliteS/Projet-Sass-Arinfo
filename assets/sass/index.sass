@@ -1,0 +1,41 @@
+@import libs/reset
+@import variable
+@import mixin
+@import boucle
+
+body
+    background-color: $quatre-color
+
+h1
+    color: #5b74b8
+    font-family: $primary-font
+
+p
+    color: #ee0d18
+
+%shadow
+    box-shadow: 0px 10px 20px black
+
+.card
+    @include border-radius
+    @include defaut-decor
+    @extend %shadow
+    width: 45%
+    height: 200px
+    background-color: blue
+    margin: 10px
+    max-width: 600px
+
+/* @ media screen est en rapport avec la partie responsive (Mobile): Pour qu'il soit activé
+     mettre la proprité du dessous en décalage (flex-direction est en quelque sorte 
+     un enfant de @ media screen)
+.row
+    display: flex
+    @media screen and (max-width: 720px)
+        flex-direction: column
+
+
+/* La propriété align-items permet de rester au centre même en responsive (Mobile)
+.justify-center
+    justify-content: center
+    align-items: center

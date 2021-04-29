@@ -1,0 +1,20 @@
+
+/* imbrication .btn et :hover ensuite pour que la propriété soir pris en compte par le hover 
+    en dessous il faut faire un décalage*/
+.btn
+    border-radius: 20%
+    border: solid #000000 1px
+    color: #060100
+    &:hover
+        background-color: purple
+
+$list-color:('red': $red, 'green': $green, 'blue': $blue, 'secondary': $secondary-color, 'primary': $primary-color)
+
+@each $color, $value in $list-color
+    .btn-#{$color}
+        @extend .btn
+        background-color: $value
+
+@for $i from 1 to 20
+  .p-#{$i}
+    padding: 5px * $i !important

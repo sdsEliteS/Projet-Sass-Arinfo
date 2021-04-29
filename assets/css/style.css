@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* imbrication .btn et :hover ensuite pour que la propriété soir pris en compte par le hover 
+ *  en dessous il faut faire un décalage*/
+.btn, .btn-primary, .btn-secondary, .btn-blue, .btn-green, .btn-red {
+  border-radius: 20%;
+  border: solid #000000 1px;
+  color: #060100;
+}
+.btn:hover, .btn-primary:hover, .btn-secondary:hover, .btn-blue:hover, .btn-green:hover, .btn-red:hover {
+  background-color: purple;
+}
+
+.btn-red {
+  background-color: #c20101;
+}
+
+.btn-green {
+  background-color: #28c201;
+}
+
+.btn-blue {
+  background-color: #012ec2;
+}
+
+.btn-secondary {
+  background-color: #28c201;
+}
+
+.btn-primary {
+  background-color: #012ec2;
+}
+
+.p-1 {
+  padding: 5px !important;
+}
+
+.p-2 {
+  padding: 10px !important;
+}
+
+.p-3 {
+  padding: 15px !important;
+}
+
+.p-4 {
+  padding: 20px !important;
+}
+
+.p-5 {
+  padding: 25px !important;
+}
+
+.p-6 {
+  padding: 30px !important;
+}
+
+.p-7 {
+  padding: 35px !important;
+}
+
+.p-8 {
+  padding: 40px !important;
+}
+
+.p-9 {
+  padding: 45px !important;
+}
+
+.p-10 {
+  padding: 50px !important;
+}
+
+.p-11 {
+  padding: 55px !important;
+}
+
+.p-12 {
+  padding: 60px !important;
+}
+
+.p-13 {
+  padding: 65px !important;
+}
+
+.p-14 {
+  padding: 70px !important;
+}
+
+.p-15 {
+  padding: 75px !important;
+}
+
+.p-16 {
+  padding: 80px !important;
+}
+
+.p-17 {
+  padding: 85px !important;
+}
+
+.p-18 {
+  padding: 90px !important;
+}
+
+.p-19 {
+  padding: 95px !important;
+}
+
+body {
+  background-color: #dfdbdd;
+}
+
+h1 {
+  color: #5b74b8;
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  color: #ee0d18;
+}
+
+.card {
+  box-shadow: 0px 10px 20px black;
+}
+
+.card {
+  border-radius: 20%;
+  border: solid #000000 1px;
+  color: purple;
+  width: 45%;
+  height: 200px;
+  background-color: blue;
+  margin: 10px;
+  max-width: 600px;
+}
+.card:hover {
+  background-color: #f8ed05;
+}
+
+/* @ media screen est en rapport avec la partie responsive (Mobile): Pour qu'il soit activé
+ *   mettre la proprité du dessous en décalage (flex-direction est en quelque sorte 
+ *   un enfant de @ media screen) */
+.row {
+  display: flex;
+}
+@media screen and (max-width: 720px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* La propriété align-items permet de rester au centre même en responsive (Mobile) */
+.justify-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
